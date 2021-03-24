@@ -1,0 +1,888 @@
+
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
+
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 1,1px;
+}
+
+body {
+    background-color: rgb(241, 235, 235);
+}
+
+
+
+/* Menubalk */
+
+#portfolionaam {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 100px;
+    font-family: 'East Sea Dokdo', cursive;
+    color: rgb(155, 38, 25);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.menu li {
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.menubalk {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    transition: all 0.45s;
+    font-size: 24px;
+    color: rgb(85, 0, 141);
+    font-weight: bold;
+}
+
+.menubalk:hover {
+    color: red;
+}
+
+
+.portfoliolink {
+    text-decoration: none;
+}
+
+    /* Media Queries */
+
+@media (max-width: 589px ) {
+    #portfolionaam {
+        font-size: 70px;
+        text-align: left;
+        margin-left: 18%;
+    }
+
+    .menu li a {
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 589px ) {
+    #portfolionaam {
+        margin-left: 12%;
+    }
+
+}
+
+@media (max-width: 481px ) {
+    #portfolionaam {
+        font-size: 60px;
+        margin-left: 10%;
+    }
+
+}
+
+@media (max-width: 408px ) {
+    #portfolionaam {
+        font-size: 40px;
+        margin-left: 20%;
+
+    }
+
+}
+
+@media (max-width: 408px ) {
+    #portfolionaam {
+        margin-left: 16%;
+    }
+
+}
+
+
+/* Homepagina */
+
+    /* Inleiding */
+
+.inleiding {
+    display: block;
+    background-color: rgb(211, 211, 211);
+    font-family:'East Sea Dokdo', cursive;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    margin-top: 20px;
+    width: 100%;
+    
+}
+
+.inleiding-content {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+}
+
+.welkom {
+    font-size: 50px;
+    text-align: center;
+}
+
+.inleidingtekst {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 30px;
+    letter-spacing: 2px;
+    margin-top: 30px;
+}
+
+@media (max-width: 700px ) {
+    .inleidingtekst {
+        font-size: 18px;
+    }
+    .inleiding-content {
+        width: 90%;
+    }
+}
+
+
+    /* Projecten */
+
+.fotolijstWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.fotolijst1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    row-gap: 40px;
+    grid-auto-rows: minmax(100px, auto);
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 24px;
+    list-style-type: none;
+    text-align: center;
+    width: auto;
+    margin: 50px 50px 0;
+}
+
+.fotos {
+    /*grid-column: 1 ;*/
+    /*grid-row: 1;*/
+    /*transition: 0.45s;*/
+}
+
+img {
+    width: 500px;
+    height: 345px;
+}
+
+
+.fotos1:hover,.fotos2:hover,.fotos3:hover,.fotos4:hover,.fotos5:hover,.fotos6:hover {
+    transform: scale(1.1);
+}
+
+.projectlinks {
+    text-decoration: none;
+    color: rgb(85, 0, 141);
+    transition: 0.45s;
+}
+
+.projectlinks:hover {
+    color: red;
+}
+
+    /*  Media Queries */
+
+/*@media (max-width: 1268px ) {*/
+    /*.fotolijst1{*/
+        /*margin-left: 8%;*/
+    /*}*/
+/*}*/
+
+/*@media (max-width: 1169px ) {*/
+    /*.fotolijst1{*/
+        /*margin-left: 3.5%;*/
+    /*}*/
+/*}*/
+
+@media (max-width: 990px ) {
+    .fotolijst1{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/*@media (max-width: 876px ) {*/
+    /*.fotolijst1{*/
+        /*margin-left: 21%;*/
+    /*}*/
+/*}*/
+
+/*@media (max-width: 709px ) {*/
+    /*.fotolijst1{*/
+        /*margin-left: 15%;*/
+    /*}*/
+/*}*/
+
+/*@media (max-width: 589px ) {*/
+    /*.fotolijst1{*/
+        /*margin-left: 25%;*/
+    /*}*/
+
+    /*img {*/
+        /*width: 300px;*/
+        /*height: 210px;*/
+    /*}*/
+/*}*/
+
+/*@media (max-width: 408px ) {*/
+    /*.fotolijst1{*/
+        /*margin-left: 14%;*/
+    /*}*/
+/*}*/
+
+/*@media (max-width: 358px ) {*/
+    /*.fotolijst1{*/
+        /*margin-left: 8%;*/
+    /*}*/
+/*}*/
+
+/*@media (max-width: 321px ) {*/
+    /*.fotolijst1{*/
+        /*margin-left: 3%;*/
+    /*}*/
+/*}*/
+
+/* Over mij Pagina */
+
+.overmijtitel, .naam {
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 80px;
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.overmijtekst {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 30px;
+    letter-spacing: 2px;
+    width: 60%;
+    display: block;
+    margin: 30px auto;
+}
+
+.naam {
+    margin-bottom: 50px;
+}
+
+@media (max-width:1120px){
+    .overmijtitel, .naam {
+        font-size: 60px;
+    }
+
+}
+
+@media (max-width: 778px){
+    .overmijtitel, .naam {
+        font-size: 50px;
+    }
+
+    .overmijtekst {
+        font-size: 20px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 588px){
+    .overmijtitel, .naam {
+        font-size: 40px;
+    }
+
+    .overmijtekst {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 321px){
+    .overmijtitel, .naam {
+        font-size: 32px;
+    }
+}
+
+/* Contact-Pagina */
+
+.email {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Isgaproject-Pagina*/
+
+.isgatitel {
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.isgatitel2 {
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 40px;
+    width: 60%;
+    display: block;
+    margin: 20px auto 0;
+}
+
+.isgatekst {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-bottom: 25px;
+    width: 60%;
+    display: block;
+    margin: 20px auto 0;
+}
+
+figure {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 24px;
+}
+
+.fotocap {
+    width: 60%;
+    display: block;
+    margin: 0px auto 0;
+}
+
+    /* slides */
+
+.slideimg {
+    height: 500px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.slides {
+    display: flex;
+    width: auto;
+    margin: 0 auto 20px;
+    justify-content: center;
+}
+
+.a3 {
+    width: 800px;
+    height: 500px;
+}
+
+.scherm1 {
+    width: 900px;
+    height: 450px;
+}
+
+.scherm2 {
+    width: 900px;
+    height: 350px;
+}
+
+.scherm3 {
+    width: 700px;
+    height: 500px;
+}
+
+    /* media queries */
+
+@media (max-width: 1165px) {
+    .slides {
+        margin-left: 10%;
+    }
+
+
+    .fotocap {
+        margin-left: 16%;
+    }
+}
+
+@media (max-width: 1032px) {
+    .slides {
+        margin-left: 13%;
+    }
+
+    .slideimg {
+        height: 400px;
+        width: 250px;
+    }
+}
+
+@media (max-width: 891px) {
+    .slides {
+        margin-left: 14%;
+    }
+
+    .isgatitel {
+        font-size: 50px;
+    }
+
+    .isgatitel2 {
+        font-size: 35px;
+    }
+
+    .isgatekst {
+        font-size: 18px;
+    }
+
+    .fotocap {
+        margin-left: 10%;
+    }
+
+    .slideimg {
+        height: 330px;
+        width: 200px;
+    }
+
+    .a3 {
+        width: 600px;
+        height: 300px;
+    }
+
+    .scherm1 {
+        width: 700px;
+        height: 350px;
+    }
+
+    .scherm2 {
+        width: 700px;
+        height: 250px;
+    }
+
+    .scherm3 {
+        width: 500px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 732px) {
+    .slides {
+        margin-left: 8%;
+    }
+
+    .isgatitel {
+        font-size: 40px;
+    }
+
+    .isgatitel2 {
+        font-size: 30px;
+    }
+
+    .isgatekst {
+        font-size: 17px;
+    }
+
+    .a3 {
+        width: 600px;
+        height: 300px;
+    }
+
+    .scherm1 {
+        width: 600px;
+        height: 300px;
+    }
+
+    .scherm2 {
+        width: 600px;
+        height: 200px;
+    }
+
+    .scherm3 {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 647px) {
+    .slides {
+        margin-left: 32%;
+        display: block;
+    }
+
+    .a3 {
+        width: 400px;
+        height: 250px;
+    }
+
+    .scherm1 {
+        width: 400px;
+        height:200px;
+    }
+
+    .scherm2 {
+        width: 400px;
+        height: 150px;
+    }
+
+    .scherm3 {
+        width: 200px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 404px) {
+    .slides {
+        margin-left: 25%;
+    }
+
+    .a3 {
+        width: 250px;
+        height: 170px;
+    }
+
+    .scherm1 {
+        width: 250px;
+        height:150px;
+    }
+
+    .scherm2 {
+        width: 250px;
+        height: 100px;
+    }
+
+    .scherm3 {
+        width: 200px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 732px) {
+    .slides {
+        margin-left: 20%;
+    }
+
+    .isgatitel {
+        font-size: 35px;
+    }
+}
+
+/* De Bibliotheek pagina */
+
+    /* Slideshow container Bron: https://www.w3schools.com/howto/howto_js_slideshow.asp */
+
+.slideshow-container {
+    width: 40%; 
+    position: relative;
+    margin-left: 32.5% ;
+}
+
+    /* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+    /* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+    /* Position the "next button" to the right */
+.next {
+    left: 85%;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    right:101%;
+}
+
+    /* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+    /* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+    /* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+    /* Media Quaries */
+
+@media (max-width: 1165px) {
+    .slideshow-container {
+        margin-left: 28%;
+    }
+
+    .next {
+        left: 108%;
+    }
+}
+    
+@media (max-width: 1032px) {
+    .slideshow-container {
+        margin-left: 25%;
+    }
+
+    .next {
+        left: 121.5%;
+    }
+}
+    
+@media (max-width: 891px) {
+    .slideshow-container {
+        margin-left: 20%;
+    }
+
+    .next {
+        left: 140%;
+    }   
+}
+    
+@media (max-width: 732px) {
+    .slideshow-container {
+        margin-left: 15%;
+    }
+
+    .next {
+        left: 171%;
+    }
+}
+    
+@media (max-width: 647px) {
+    .slideshow-container {
+        margin-left: 11%;
+    }
+
+    .next {
+        left: 193%;
+    }
+}
+    
+@media (max-width: 404px) {
+    .SlideImg {
+        width: 325px;
+        height: 250px;
+    }
+    
+    .slideshow-container {
+        width: 10%;
+        margin-left: 10%;
+    }
+
+    .next {
+        left: 770%;
+    }
+    
+    .prev {
+        right: 70%;
+    }
+    }
+
+/* Illustratorcursus-pagina */
+
+    /* Carousel */
+
+#fotobladeren1 {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+    
+#foto1 {
+    max-width:30em;
+}
+    
+ul#thumbnails1 {
+    list-style: none;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+ul#thumbnails1 li {
+    box-sizing: border-box;
+    width: 3em;
+    margin:0.2em;
+}
+
+ul#thumbnails1 li.huidig1 {
+    border: 1px solid black;
+}
+
+ul#thumbnails1  img{
+    width: 100%;
+}
+    
+    
+button#terug1,  button#vooruit1 {
+    height: 10rem;
+}
+
+/* Vormgeving 2 multidevice ontwerp maken */
+
+.IAmSec {
+    display: flex;
+    margin-left: 25%;
+}
+
+.IAmImg {
+    height: 800px;
+    width: 200px;
+    transition: 0.45s;
+    margin-right: 50px;
+}
+
+.IAmImg1 {
+    height: 800px;
+    width: 500px;
+    transition: 0.45s;
+}
+
+.IAmImg:hover, .IAmImg1:hover {
+    transform: scale(1.5);
+}
+
+    /* Media quaries */
+
+@media (max-width: 1103px ) {
+    .IAmSec {
+        margin-left: 16%;
+    }
+}
+
+@media (max-width: 892px ) {
+    .IAmSec {
+        margin-left: 10%;
+        display: block;
+    }
+}
+
+@media (max-width: 555px ) {
+    .IAmSec {
+        margin-left: 10%;
+        display: block;
+    }
+
+    .IAmImg1 {
+        height: 700px;
+        width: 400px;
+    }
+}
+
+@media (max-width: 455px ) {
+    .IAmSec {
+        margin-left: 4%;
+        display: block;
+    }
+
+    .IAmImg1 {
+        height: 600px;
+        width: 300px;
+    }
+}
+/* Footer */
+
+footer {
+    position:relative;
+    background-image: url("./Afbeeldingen/footer/footer.png");
+    background-size: cover;
+    height: 200px;
+    margin-top: 100px;
+}
+
+.absolute {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    font-size: 28px;
+    text-shadow: 2px 2px 4px #fff;
+    text-align: center;
+    padding-top: 60px;
+}
+
+    /* Media Quaries */
+
+@media (max-width: 1165px ) {
+    .footer{
+        margin-left: 16%;
+    }
+}
+
+@media (max-width: 888px ) {
+    .footer{
+        margin-left: 10%;
+    }
+}
+
+section {
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 876px ) {
+    section {
+        width: 90%;
+    }
+}
+
